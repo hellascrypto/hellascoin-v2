@@ -1092,10 +1092,10 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 28800; // Hellascoin: 3.5 days
-static const int64 nTargetSpacing = 540; // Hellascoin: 2.5 minutes
+static const int64 nTargetTimespan = 2160; // Hellascoin: Every 4 blocks
+static const int64 nTargetSpacing = 540; // Hellascoin: Every 9 Minutes 
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
-
+// 
 //
 // minimum amount of work that could possibly be required nTime after
 // minimum work required was nBase
